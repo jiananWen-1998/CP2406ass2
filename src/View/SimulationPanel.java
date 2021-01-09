@@ -102,7 +102,7 @@ public class SimulationPanel extends JPanel {
             }
             for (Iterator<Vehicle> iterator = vehicles.iterator(); iterator.hasNext(); ) {
                 Vehicle vehicle = iterator.next();
-//                vehicle.setLane(Model.Vehicle.Lane.LEFT);
+                //vehicle.setLane(Vehicle.Lane.LEFT);
                 vehicle.move();
                 vehicle.printStatus();
                 if (vehicle.getPosition() + vehicle.getLength() + vehicle.getSpeed() >= vehicle.getCurrentRoad().getLength() && vehicle.getCurrentRoad().getConnectedRoads().isEmpty() && (vehicle.getSpeed() == 0)) {

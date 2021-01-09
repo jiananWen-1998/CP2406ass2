@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import Model.Road;
 import Model.TrafficLight;

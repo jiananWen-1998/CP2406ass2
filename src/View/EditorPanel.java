@@ -95,13 +95,13 @@ public class EditorPanel extends JPanel {
             for (Road road : roads
             ) {
                 road.draw(g, scale);
-//                g.setColor(Color.YELLOW);
-//                int[] location = road.getEndLocation();
-//                int x = location[0];
-//                int y = location[1];
-//                int width = 10 * scale;
-//                int height = road.getWidth() * scale;
-//                g.fillRect(x,y,width,height);
+                g.setColor(Color.YELLOW);
+               int[] location = road.getEndLocation();
+               int x = location[0];
+               int y = location[1];
+               int width = 10 * scale;
+               int height = road.getWidth() * scale;
+               g.fillRect(x,y,width,height);
             }
         }
 
